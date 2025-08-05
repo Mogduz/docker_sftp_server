@@ -31,7 +31,7 @@ RUN mkdir -p /srv/cloud && chown root:root /srv/cloud && chmod 755 /srv/cloud
 RUN echo "PermitRootLogin no" >> /etc/ssh/sshd_config
 
 # Entrypoint-Script kopieren
-COPY docker-entrypoint.sh /usr/local/bin/
+COPY ./src/docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 EXPOSE 22
