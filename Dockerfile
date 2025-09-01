@@ -34,7 +34,7 @@ RUN echo "PermitRootLogin no" >> /etc/ssh/sshd_config
 COPY ./src/docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
-EXPOSE 22 80 8080
+EXPOSE 22 80
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["/usr/sbin/sshd","-D"]
