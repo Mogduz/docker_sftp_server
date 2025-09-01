@@ -1,2 +1,6 @@
 name: sftp_server
-version: 0.1
+tags:
+  - 0.1
+  - latest
+  - testing
+push: True
